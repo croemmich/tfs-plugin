@@ -534,7 +534,7 @@ public class TeamFoundationServerScm extends SCM {
      * VERSION_SPEC during the build
      */
     public void buildEnvironment(final Run<?, ?> build, final Map<String, String> env) {
-        if(null == build) {
+        if (null == build) {
             return;
         }
         final TeamBuildDetailsAction buildDetailsAction = build.getAction(TeamBuildDetailsAction.class);
